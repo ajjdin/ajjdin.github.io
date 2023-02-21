@@ -1,9 +1,9 @@
 #body {
   border: solid 2px;
-  width: 350px;
+  width: 22em;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 33em;
   border-radius: 15px;
   background-color: #170069;
 }
