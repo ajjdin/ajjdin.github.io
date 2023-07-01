@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .screen {
+    width: 300px;
+    height: 100px; /* Set a fixed height for the screen */
+    background: #67B26F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add overflow property to hide overflowing content */
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  
+  .expression {
+    font-size: 24px;
+  }
+  
+  .result {
+    font-size: 48px;
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+  
+  .light-gray {
+    background-color: #4ca2cd;
+    color: #fff;
+  }
+  
+  .dark-gray {
+    background-color: #4ca2cd;
+    color: #fff;
+  }
+  
+  .orange {
+    background-color: #67B26F;
+    color: #fff;
+  }
+  
+  .equal {
+    width: 150px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .calculator {
+      margin-top: 20px;
+    }
+  
+    .screen {
+      width: 90%;
+    }
+  
+    .button {
+      font-size: 20px;
+      margin: 2px;
+    }
+  }
